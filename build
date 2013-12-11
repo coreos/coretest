@@ -3,8 +3,6 @@ set -e
 
 cd "$(dirname $0)"
 
-export GOPATH="${PWD}/workspace"
-mkdir -p "${GOPATH}"
+export GOPATH="${PWD}/third_party"
 
-go get -d
 go test -i -c

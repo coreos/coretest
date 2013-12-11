@@ -22,4 +22,4 @@ _testmain.go
 *.exe
 *.test
 
-workspace
+third_party/pkg
