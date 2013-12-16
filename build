@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+cd "$( dirname "$0" )"
+
+export GOPATH="${PWD}/third_party"
+
+go test -i -c
+mv coretest.test coretest
