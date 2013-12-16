@@ -1,0 +1,10 @@
+[Unit]
+Description="Sanity tests for CoreOS"
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/coretest
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
