@@ -7,7 +7,7 @@ Sanity tests for a minimal Linux
 
 ```sh
 cd coretest
-make
+./build
 ```
 
 This will generate a binary in the base directory called "./coretest".
