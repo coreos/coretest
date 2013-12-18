@@ -7,7 +7,7 @@ CROS_WORKON_COMMIT=""
 CROS_WORKON_PROJECT="coreos/coretest"
 CROS_WORKON_LOCALNAME="coretest"
 CROS_WORKON_REPO="git://github.com"
-inherit toolchain-funcs cros-workon
+inherit toolchain-funcs cros-workon systemd
 
 DESCRIPTION="Sanity tests for CoreOS"
 HOMEPAGE="https://github.com/coreos/coretest"
@@ -25,5 +25,7 @@ src_compile() {
 }
 
 src_install() {
-	dobin ${S}/${PN}
+	dobin "${S}/${PN}"
+
+	systemd_dounit "${S}/misc/coretest.service"
 }
