@@ -2,9 +2,11 @@
 
 set -e
 
+CORETEST_PACKAGE="github.com/coreos/coretest"
+
 cd "$( dirname "$0" )"
 
 export GOPATH="${PWD}/third_party"
 
-go test -i -c
+go test -i -c "${CORETEST_PACKAGE}"
 mv coretest.test coretest

@@ -23,4 +23,4 @@ _testmain.go
 *.test
 
 third_party/pkg
-coretest
+/coretest
