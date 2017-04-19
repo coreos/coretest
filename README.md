@@ -1,3 +1,12 @@
+DEPRECATED
+==========
+
+coretest has been replaced by [kola][mantle].
+
+[mantle]: https://github.com/coreos/mantle
+
+---
+
 coretest
 ========
 
